@@ -5,10 +5,9 @@ meta:
     version: 8.0
 build:
   image: mcr.microsoft.com/dotnet/sdk:8.0
-  command: dotnet publish AutoPartsBot/AutoPartsBot.csproj -c Release -o publish
 run:
   image: mcr.microsoft.com/dotnet/aspnet:8.0
-  buildFileName: AutoPartsBot
+  command: dotnet AutoPartsBot/bin/Release/net8.0/AutoPartsBot.dll
   persistenceMount: /data
   containerPort: 80
 
