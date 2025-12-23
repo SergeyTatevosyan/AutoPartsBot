@@ -3,6 +3,5 @@ meta:
 build:
   dockerfile: Dockerfile
 run:
-  persistence:
-    - /data
+  persistenceMount: /data
   containerPort: 80
