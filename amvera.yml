@@ -1,13 +1,8 @@
 meta:
-  environment: csharp
-  toolchain:
-    name: dotnet
-    version: 8.0
+  environment: docker
 build:
-  image: mcr.microsoft.com/dotnet/sdk:8.0
+  dockerfile: Dockerfile
 run:
-  image: mcr.microsoft.com/dotnet/aspnet:8.0
-  command: dotnet AutoPartsBot/bin/Release/net8.0/AutoPartsBot.dll
-  persistenceMount: /data
+  persistence:
+    - /data
   containerPort: 80
-
