@@ -7,7 +7,7 @@ build:
   image: mcr.microsoft.com/dotnet/sdk:8.0
 run:
   image: mcr.microsoft.com/dotnet/aspnet:8.0
-  command: dotnet AutoPartsBot.dll
-  persistence:
-    - /data
-  containerPort: 8080
+  buildFileName: AutoPartsBot
+  persistenceMount: /data
+  containerPort: 80
+
