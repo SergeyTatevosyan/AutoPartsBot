@@ -37,5 +37,6 @@ public enum CarNodeType
     ComfortElectronics, // Комфорт-электроника
     FuelSystem,         // Топливная система
     EmissionControl,    // Система контроля токсичности
-    ACService           // Установки для обслуживания кондиционеров
+    ACService,          // Установки для обслуживания кондиционеров
+    Glass               // Стекла и элементы остекления
 }
